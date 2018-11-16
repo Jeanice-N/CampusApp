@@ -1,0 +1,25 @@
+{
+"Sheridan": 
+{
+	"campuses": [ 
+	{
+		"name" : "Davis",
+		"city" : "Brampton",
+		"lat" : 43.656233,
+		"lng" :  -79.739397
+	},
+	{
+		"name" : "Trafalgar",
+		"city" : "Oakville",
+		"lat" : 43.469280,
+		"lng" :  -79.698683
+	},
+	{
+		"name" : "HMC",
+		"city" : "Mississauga",
+		"lat" : 43.591316,
+		"lng" : -79.647090
+	}
+	]
+}
+}

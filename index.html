@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<link rel="stylesheet" href="_css/jquery.mobile.css" />
+	<link href="_css/port.css" rel="stylesheet" media="screen and (orientation: portrait)" />
+	<link href="_css/land.css" rel="stylesheet" media="screen and (orientation: landscape)" />	
+	
+	<script src="_js/jquery.js"></script>
+	<script src="_js/jquery.mobile.js"></script>
+	<script src="_js/myscript.js"></script>
+  <script async defer 
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCW5pA3epd2_rYELZkzndax4drxwdan_TI"
+					type="text/javascript"></script>	
+
+</head> 
+
+<body> 
+
+<div data-role="page" id="geo">
+  <div data-role="header">
+    <h1>Where Is My Campus?</h1>
+  </div>
+
+  <div data-role="content">
+		<section id="blkA">
+			<form>
+				<fieldset data-role="controlgroup" data-type="horizontal">
+					<h2>Pick your campus...</h2>
+					<input type="radio" name="campus" id="Davis" value="off">
+					<label for="Davis">Davis</label>
+					<input type="radio" name="campus" id="Trafalgar" value="off">
+					<label for="Trafalgar">Trafalgar</label>
+					<input type="radio" name="campus" id="HMC" value="off">
+					<label for="HMC">HMC</label>
+				</fieldset>
+			</form>			
+			<h3>Latitude: <span id="lat"></span> </h3>
+			<h3>Longitude: <span id="lng"></span> </h3>
+			<hr>
+			<button id="ALL" class="ui-btn">Show path between all campuses...</button><br>
+		</section>
+		<section id="blkB">
+			<div id="map_canvas" style="height:400px; width:400px;"></div>
+		</section>
+  </div>
+</div>
+
+</body>
+</html>
